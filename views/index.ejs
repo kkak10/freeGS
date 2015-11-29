@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<a href="/auth/facebook">facebook login</a>
+	<a href="/auth/twitter">twitter login</a>
+	<a href="/auth/google">google login</a>
+
+	<% if (user.username) { %>
+		<a href="/logout">logout</a>
+		<%= user.username %>
+	<% } %>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "freeGS",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "express-session": "^1.12.1",
+    "morgan": "~1.6.1",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.0.0",
+    "passport-google-oauth": "^0.2.0",
+    "passport-twitter": "^1.0.3",
+    "serve-favicon": "~2.3.0"
+  },
+  "oauth": {
+    "twitter": {
+      "TWITTER_CONSUMER_KEY": "5hD9ohfASRu0CDuhHy3bWIhQ3",
+      "TWITTER_CONSUMER_SECRET": "kCOQgg3neSg9XUFWDLjcyNdnnGyOy3FxRcOn8kdXbDjZwS5ta5",
+      "callbackURL": "http://127.0.0.1:3000/auth/twitter/callback"
+    },
+    "facebook": {
+      "FACEBOOK_APP_ID": "1006986219347084",
+      "FACEBOOK_APP_SECRET": "b9027e7bb642f07fc077b1e552438129",
+      "callbackURL": "http://localhost:3000/auth/facebook/callback"
+    },
+    "google": {
+      "GOOGLE_APP_ID": "1077149682775-eun7drn7mo98b567ahc3o4ulq2o16tt5.apps.googleusercontent.com",
+      "GOOGLE_APP_SECRET": "1NVlfazoi1d23aLJsfUtnZD9",
+      "callbackURL": "http://localhost:3000/auth/google/callback"
+    }
+  }
+}
