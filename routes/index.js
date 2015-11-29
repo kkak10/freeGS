@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+function init(router){
+  router.get('/', function(req, res){
+    var user_info = req.session.passport ? req.session.passport.user : {};
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+    res.render('index', { user: user_info });
+  });
 
-module.exports = router;
+  return router;
+}
+
+module.exports = init;
